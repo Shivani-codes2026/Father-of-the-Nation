@@ -137,7 +137,7 @@ footer { background: #000080; color: white; text-align: center; padding: 15px; m
   <img class ="movement-img" src="mh3.jpg" >
 </marquee>
   <p>Mohandas Karamchand Gandhi, known as Bapu, was born on 2nd October 1869 in Porbandar, Gujarat, India. He is known as Father of the Nation. He fought for truth, non-voilence and freedom. </p>
-
+  </div>
   <div class="movement-box">
     <h3>💍 Marriage & Wedding Life</h3>
     <img class="movement-img" src="wed1.jpg" height= "50" width = "100">
@@ -172,25 +172,36 @@ footer { background: #000080; color: white; text-align: center; padding: 15px; m
 
   
 
-</div>
 
-<!-- EXTRA SECTION FOR FAMILY PHOTOS -->
+
+
+  <!-- EXTRA SECTION FOR FAMILY PHOTOS - FIXED -->
 <div class="card" id="family">
   <h2>👨‍👩‍👧‍👦 Gandhi Family Gallery</h2>
-  <img class="movement-img" src="mfam.jpg" alt="Gandhi Family Tree Chart">
+  <img src="mfam.jpg" alt="Gandhi Family Tree Chart" style="width:100%; max-width:600px; height:auto; border-radius:8px; display:block; margin:10px auto;">
   <p>The Gandhi family has always been a symbol of simplicity, truth and service.</p>
 </div>
-
-  <div class="card" id="education">
-    <h2>🎓 Education & South Africa</h2>
-    <marquee ><img class="movement-img" src="stu.jpg" alt="Gandhi in South Africa">
-    <img class="movement-img" src="stu1.jpg" >
-    <img class="movement-img" src="stu2.jpg" >
-    <img class="movement-img" src="stu3.jpg" >
-    <img class="movement-img" src="stu4.jpg" >
-    </marquee>
-    <p>Gandhiji went to London in 1888 to study law. In 1893 he went to South Africa. There he faced racism. He started his first Satyagraha there and fought for 21 years for Indians rights.</p>
   </div>
+
+<div class="card" id="education">
+  <h2>🎓 Education & South Africa</h2>
+  
+  <!-- FIXED MARQUEE - No >> , No class -->
+  <div style="background:white; padding:5px; border-radius:8px; overflow:hidden;">
+  <marquee behavior="scroll" direction="left" scrollamount="5" loop="-1" onmouseover="this.stop()" onmouseout="this.start()">
+    <img src="stu.jpg" alt="Gandhi in South Africa" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+    <img src="stu1.jpg" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+    <img src="stu2.jpg" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+    <img src="stu3.jpg" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+    <img src="stu4.jpg" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+    <!-- Duplicate for continuous scroll -->
+    <img src="stu.jpg" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+    <img src="stu1.jpg" style="height:180px; width:auto; margin-right:15px; border-radius:8px;">
+  </marquee>
+  </div>
+
+  <p>Gandhiji went to London in 1888 to study law. In 1893 he went to South Africa. There he faced racism. He started his first Satyagraha there and fought for 21 years for Indians rights.</p>
+</div>
 
   <div class="card" id="teachings">
     <h2>🕊️ His Main Teachings</h2>
